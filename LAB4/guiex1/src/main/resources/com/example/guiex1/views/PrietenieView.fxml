@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.PrietenieController">
+    <children>
+        <SplitPane layoutX="-4.0" layoutY="2.0" orientation="VERTICAL" prefHeight="305.0" prefWidth="567.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="264.0" prefWidth="561.0">
+                    <children>
+                        <TableView fx:id="tableView" layoutX="1.0" layoutY="-1.0" prefHeight="305.0" prefWidth="565.0">
+                            <columns>
+                                <TableColumn fx:id="tableColumnFirstName" prefWidth="280.0" text="FistName" />
+                                <TableColumn fx:id="tableColumnLastName" prefWidth="278.0" text="LastName" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <AnchorPane layoutX="-3.0" layoutY="306.0" prefHeight="95.0" prefWidth="565.0">
+            <children>
+                <Button layoutX="126.0" layoutY="35.0" mnemonicParsing="false" onAction="#onBackToProfile" text="Back" />
+                <Button layoutX="404.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleDeleteFriend" text="Delete" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
+
+
